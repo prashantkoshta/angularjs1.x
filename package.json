@@ -1,0 +1,21 @@
+{
+  "name": "sample-server",
+  "version": "0.0.1",
+  "description": "Demo server to run static pages.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "angular": "1.2.32",
+    "angular-route" :"1.2.32",
+    "angular-sanitize":"1.2.32"
+  }
+}
