@@ -23,6 +23,7 @@ app.use(function (req, res, next) {
 
 
 app.get('/testservice',function (req, res, next) {
+  console.log("##################Getting.");
   res.send({'data':'Got data now'});
 })
 
