@@ -11,7 +11,7 @@ angular.module("k.app", [
         templateUrl : appConstants.template.HOME_TMPL_URL,
         controller : 'homeCtrl'
     })
-    .when("/contact", {
+    .when("/contact/:test/:abc", {
         templateUrl : appConstants.template.CONTACTUS_TMPL_URL,
         controller : 'contactusCtrl'
     })

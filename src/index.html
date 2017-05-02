@@ -1,31 +1,42 @@
 <!DOCTYPE>
 <html  ng-app="k.app" ng-controller="mainCtrl">
     <head>
-
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sample App</title>
+        <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+        <!--[if lte IE 8]>
+            <script src="/src/libs/html5shiv.min.js" type="text/javascript"></script>
+            <script src="/src/libs/respond.min.js" type="text/javascript"></script>
+        <![endif]-->
     </head>
 
     <body>
+        <k-header-dir></k-header-dir>
+
         Test HTMLasdf
 
         <button type="button" ng-click="test()">Home Click Me.</button>
 
-        <k-header-dir></k-header-dir>
+        
 
         <div ng-view></div>
-
+        <script src = "/node_modules/jquery/dist/jquery.min.js"></script>  
+         <script src = "/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>   
          <script src = "/node_modules/angular/angular.min.js"></script>
          <script src = "/node_modules/angular-route/angular-route.min.js"></script>
 
 
          <script src = "/src/app.js"></script>
-         <script src = "/src/config/appConstants.js"></script>
-         <script src = "/src/controller/mainCtrl.js"></script>
-         <script src = "/src/controller/homeCtrl.js"></script>
-         <script src = "/src/controller/contactusCtrl.js"></script>
+         <script src = "/src/app/config/appConstants.js"></script>
+         <script src = "/src/app/controller/mainCtrl.js"></script>
+         <script src = "/src/app/controller/homeCtrl.js"></script>
+         <script src = "/src/app/controller/contactusCtrl.js"></script>
 
-         <script src = "/src/directive/headerDir.js"></script>
-         <script src = "/src/controller/headerCtrl.js"></script>
-          <script src = "/src/services/commonService.js"></script>
+         <script src = "/src/app/directive/headerDir.js"></script>
+         <script src = "/src/app/controller/headerCtrl.js"></script>
+          <script src = "/src/app/services/commonService.js"></script>
      
     </body>
 </html>
